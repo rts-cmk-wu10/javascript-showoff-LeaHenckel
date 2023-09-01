@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>JavaScript Show Off</title>
 	<link rel="stylesheet" href="/style.css">
+	<script src="https://kit.fontawesome.com/d6034130c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <header class="heading">
+        <h1>O V E R S K R I F T </h1>
+        <section class="search__container">
+            
+            <input type="text" class="searchForm" id="searchInput" placeholder="Search...">
+            <button class="search-button" onclick="search()"><i class="fa-solid fa-search"></i></button>
+        </section>
+    </header>
+
+    <main>
+        <img onmouseover="showAlert()" src="https://fakeimg.pl/900x400" alt="Placeholder picture" class="placeholder__Image">
+        
+        <section class="search__result">
+            <h2>Resultater</h2>
+            <ul id="myList"></ul>
+        </section>
+
+		<!-- Slider container -->
+		<section class="container">
+			<article class="slide fade">
+			  <img src="./slider_images/javascript-736401_1280.webp" class="image">
+			</article>
+			<article class="slide fade">
+			  <img src="./slider_images/javascript-logo-F248CC9425-seeklogo.com.png" class="image">
+			</article>
+			<article class="slide fade">
+			  <img src="./slider_images/javascript-logo-transparent-logo-javascript-images-3.png" class="image">
+			</article>
+			<article class="slide fade">
+			  <img src="./slider_images/javascript-node-js-computer-icons-logo-application-software-png-favpng-ebFcx9xnNQyPYnT2RTy7PWBdV.jpg" class="image">
+			  <article class="slide fade">
+				<img src="./slider_images/javascript-with-coffee-logo-10.png" class="image">
+			  </article>
+			</article>
+			<button class="next"><i class="fa-solid fa-left-long"></i></button>    <button class="previous"><i class="fa-solid fa-right-long"></i></button>
+		</section>
+		<!-- End of slider container  -->
+	</main>
 	
 	<script src="/app.js" defer></script>
 </body>
