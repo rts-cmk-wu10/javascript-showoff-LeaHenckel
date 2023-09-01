@@ -120,10 +120,9 @@ var trekkingRoute = [
     location: ["Australia"],
   },
 ];
-
 // End of array
 
-// Search function
+// Search function - virker ikke. Kan ikke løse det
 function search() {
   const searchValue = document
     .getElementById("searchInput")
